@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Library</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+          <div class="navbar bg-dark">
+            <div class="col-lg-1 px-2">
+              <img class="d-block w-100" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-dl-logo-white.png" alt="">
+            </div>
+            <div class="col-lg-7 px-5">
+              <img class="d-block w-25" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-logo-1.png" alt="">
+            </div>
+            <div class="col-lg-1">
+              <a class="text-decoration-none text-light" href="">Browser</a>
+            </div>
+            <div class="col-lg-1">
+              <a class="text-decoration-none text-light" href="">About</a>
+            </div>
+            <div class="col-lg-1">
+              <a class="text-decoration-none text-light" href="">Sign in</a>
+            </div>
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-secondary text-decoration-none text-light" href="">Register</button>
+            </div>
+          </div>
+          <div class="main-header w-100">
+            <div class="row py-5 w-100">
+              <div class="logo mx-auto">
+                <img class="logoimg d-block" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/logo.svg" alt="">
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col col-lg-6 mx-auto">
+                <div class="input-group search">
+                  <input class="input-group searchinput" type="text" placeholder="Search">
+                  <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+                </div>
+                <div class="adv_search my-3 text-right">
+                  <a class="text-light text-decoration-none" href="">
+                    Advanced Search
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col w-75 d-flex align-items-center justify-content-center">
+                <div id="Slide" class="carousel slide carousel-fade w-50" data-ride="carousel">
+                  <div class="carousel-inner py-3">
+                    <div class="carousel-item active" data-interval="4000">
+                      <h5 class="text-center text-light">Tam Nguyen</h5>
+                      <p class="text-center text-light w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit ae quis incidunt sunt non perspicia. </p>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                      <h5 class="text-center text-light">Anh Thu</h5>
+                      <p class="text-center text-light w-75 mx-auto">Aperiam eveniet omnis ipsum, impedit quae quis incidunt sunt non perspiciatis.</p>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                      <h5 class="text-center text-light">Anh Tu</h5>
+                      <p class="text-center text-light w-75 mx-auto">Aspernatur totam ea molestias sunt quos consequatur nostrum. Autem, perspiciatis est?</p>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#Slide" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#Slide" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <ol class="carousel-indicators">
+                    <li data-target="#Slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#Slide" data-slide-to="1"></li>
+                    <li data-target="#Slide" data-slide-to="2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center my-5">
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0">
+                  <ion-icon name="newspaper-outline"></ion-icon>
+                  <p>Journals</p>
+                </div>
+              
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0">
+                  <i class="bi bi-newspaper"></i>
+                  <p>Magazine</p>
+                </div>
+              
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <p>Proceedings</p>
+                </div>
+              
+
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0">
+                  <i class="bi bi-book"></i>
+                  <p>ACM Books</p>
+                </div>
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0r">
+                  <ion-icon name="people-circle-outline"></ion-icon>
+                  <p>SIGs</p>
+                </div>
+              
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0r">
+                  <i class="bi bi-bank"></i>
+                  <p>Conferences</p>
+                </div>
+              
+              
+                <div class="theard d-flex flex-column align-items-center justify-content-center rounded-circle flex-shrink-0">
+                  <ion-icon name="people-outline"></ion-icon>
+                  <p>People</p>
+                </div>
+              
+            </div>
+            <div class="row justify-content-end mt-2 mx-2">
+              <div class="youtube_channel text-light">
+                <ion-icon name="logo-youtube"></ion-icon>
+                <span>Youtube Chanel</span>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="scrolldown">
+                <a class="text-decoration-none" href="#winners">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="award_winners mt-5 w-100" id="winners">
+          <div class="winners_title w-100 d-flex align-items-center mb-3">
+            <div class="rec_title bg-dark"></div>
+            <span class="title ml-1 font-italic" >Recent Award Winners</span>
+          </div>
+          <div class="col winers d-flex justify-content-center">
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/headshot-portrait-of-a-young-filipino-woman-picture-id1308405485?b=1&k=20&m=1308405485&s=170667a&w=0&h=RUya9FKVrTwV8R5LYpAzw1P95shIaPmQ3V6CKy2379I=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/portrait-of-a-smiling-man-of-indian-ethnicity-picture-id1277971635?b=1&k=20&m=1277971635&s=170667a&w=0&h=L1pgfiauaN2wIOgxdetel63XLq2ax3EkbfaIUT67USc=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/learn-to-love-yourself-first-picture-id1291208214?b=1&k=20&m=1291208214&s=170667a&w=0&h=sAq9SonSuefj3d4WKy4KzJvUiLERXge9VgZO-oqKUOo=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG90cmFpdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvdHJhaXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/portrait-of-smiling-optimistic-beard-pensioner-man-wear-light-blue-picture-id1287789056?b=1&k=20&m=1287789056&s=170667a&w=0&h=Z5fxguvjTc6keKU8HUbqTznSA3LNnIsn0ZYl9UyRhTc=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/headshot-portrait-successful-businessman-standing-in-office-posing-picture-id1262889293?b=1&k=20&m=1262889293&s=170667a&w=0&h=1eWuepMDL5dVWLcgoieLnHyDJWIrvNBS-JqFZEWUefY=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/headshot-of-mature-50-years-old-asian-business-woman-on-grey-picture-id1317784594?b=1&k=20&m=1317784594&s=170667a&w=0&h=BV1ABS-tDluO-Qa0myWpstZFJd6navrs7OezTyNHnVg=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://media.istockphoto.com/photos/portrait-young-confident-smart-asian-businessman-look-at-camera-and-picture-id1288538088?b=1&k=20&m=1288538088&s=170667a&w=0&h=3efMku7kSXUhpVrErAVVgxp6G91tRZ_5seygOn68RnE=" alt="">
+            </div>
+            <div class="avatar">
+              <div class="overlay_avatar"></div>
+              <img src="https://images.unsplash.com/photo-1586716402203-79219bede43c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvdHJhaXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=600" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="search_sub my-5 pb-3 w-100">
+          <div class="search_title w-100 d-flex align-items-center mb-3">
+            <div class="rec_title bg-light"></div>
+            <span class="title ml-1 text-light font-italic" >Search by Subject</span>
+          </div>
+          <div class="grid_subject mx-3 px-3 py-3">
+            <div class="grid_item" >
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Information Systems, Search, Information Retrieval, Database Systems, Data Mining, Data Science
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Web, Mobile and Multimedia Technologies
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Society and the Computing Profession
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="dec_sub d-flex align-items-center">
+                <p class="text-justify my-auto w-75" >
+                  Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
+                </p>  
+                <span class="arrow_ani my-auto">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="acm_authors">
+          <div class="authors_title w-100 d-flex align-items-center mb-3">
+            <div class="rec_title bg-dark"></div>
+            <span class="title ml-1 text-dark font-italic">ACM Authors</span>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tâm Nguyễn</h5>
+                      <p class="card-text">HaNoi University</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Vin AI Research</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Microsoft Research</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">University of Calarvary</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">VinUniversity</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">National University</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Peking University</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="..." alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Danang Uninversity</p>
+                      <div class="link_book d-flex rounded-pill px-2 py-2">
+                        <div class="star_icon d-flex align-items-center justify-content-center ">
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="name_book ml-1">
+                          Computer Interacton
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="acm_books">
+
+        </div>
+        <div class="acm_special">
+
+        </div>
+        <div class="acm_collections">
+
+        </div>
+        <div class="acm_proceedings">
+
+        </div>
+        <div class="most_popular">
+
+        </div>
+        <div class="acm_confer">
+
+        </div>
+        <div class="acm_magazines">
+
+        </div>
+        <div class="rencetly">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
