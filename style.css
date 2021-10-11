@@ -18,7 +18,7 @@ textarea {
       background-size: cover;
 }
 .logoimg {
-      height: 120px;
+      height: 80px;
       width: auto;
 }
 .search {
@@ -265,7 +265,7 @@ font-weight: 300;
       align-items:flex-start;
       justify-content: center;
       grid-template-columns: 45% 45%;
-      grid-template-rows: auto auto;
+      grid-template-rows: max-content;
       column-gap:5%;
       row-gap: 2rem;
 }
@@ -302,4 +302,9 @@ font-weight: 300;
 .dec_book p {
       font-size: 20px;
       font-weight: 300;
+      font-family: 'Saira Condensed', sans-serif;
+      color: black;
+}
+.right_list, .right_list_tiwtter {
+      border-radius: 10px;
 }

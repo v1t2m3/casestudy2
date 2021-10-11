@@ -1,6 +1,6 @@
 var owl = $('.authors_carousel');
 owl.owlCarousel({
-    items:4,
+    items:3,
     loop:true,
     margin:20,
     smartSpeed: 2000,
