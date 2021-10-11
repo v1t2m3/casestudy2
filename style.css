@@ -227,3 +227,79 @@ hr {
 .link_book:hover .star_icon {
       transform: rotate(360deg);
 }
+.authors_carousel .item {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+}
+.avatar_author {
+      display: flex;
+      flex-shrink: 0;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+}
+.avatar_author img {
+      display: block;
+      object-fit: cover;
+      object-position: center center;
+}
+.link_view p,
+.link_view ion-icon{
+font-size: 1.5rem;
+font-weight: 300;
+}
+.link_view:hover {
+      animation: transX 0.75s ease 0s infinite;
+}
+@keyframes transX {
+      
+0% { transform: translateX(0px);
+}
+50%{ transform: translateX(10px);
+}
+100%{ transform: translateX(0px);
+}
+}
+.grid_books {
+      display: grid;
+      align-items:flex-start;
+      justify-content: center;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: auto auto;
+      column-gap:5%;
+      row-gap: 2rem;
+}
+.item_book {
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 15px gray;
+      transition: 0.5s ease;
+}
+.item_book:hover {
+      transform: translateY(5px);
+      box-shadow: 2px 2px 40px gray;
+      cursor: pointer;
+}
+.interface_book{
+      width: 100%;
+}
+.interface_book img {
+      width: 100%;
+      height: auto;
+
+}
+.title_book p {
+      font-size: 30px;
+      font-weight: 500;
+}
+.author_n p,
+.author_n ion-icon,
+.year_book p {
+      font-size: 20px;
+      font-weight:400;
+      color: gray;
+}
+.dec_book p {
+      font-size: 20px;
+      font-weight: 300;
+}
