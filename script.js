@@ -7,6 +7,26 @@ owl.owlCarousel({
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
+    center: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        780:{
+            items:2,
+            nav:false,
+        },
+        1400:{
+            items:3,
+            nav:true,
+        },
+        1900:{
+            items:4,
+            nav:true,
+        }
+    }
     
 });
 $('.play').on('click',function(){

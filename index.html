@@ -28,28 +28,34 @@
 <body>
     <div class="container-fluid">
         <div class="header">
-          <div class="navbar bg-dark">
-            <div class="col-lg-1 px-2">
-              <img class="d-block w-100" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-dl-logo-white.png" alt="">
+          <nav class="acm_nav navbar navbar-expand-lg navbar-dark static-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-dl-logo-white.png" alt="...">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" aria-current="page" href="#">Browse</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Sign in</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <button class="btn btn-dark" >Register</button>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-7 px-5">
-              <img class="d-block w-25" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-logo-1.png" alt="">
-            </div>
-            <div class="col-lg-1">
-              <a class="text-decoration-none text-light" href="">Browser</a>
-            </div>
-            <div class="col-lg-1">
-              <a class="text-decoration-none text-light" href="">About</a>
-            </div>
-            <div class="col-lg-1">
-              <a class="text-decoration-none text-light" href="">Sign in</a>
-            </div>
-            <div class="col-lg-1">
-              <button type="button" class="btn btn-secondary text-decoration-none text-light" href="">Register</button>
-            </div>
-          </div>
+          </nav>
           <div class="main-header w-100">
-            <div class="row py-2 w-100">
+            <div class="row w-100">
               <div class="logo mx-auto">
                 <img class="logoimg d-block" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/logo.svg" alt="">
               </div>
@@ -57,7 +63,7 @@
             <div class="row my-2">
               <div class="col col-lg-6 mx-auto">
                 <div class="input-group search">
-                  <input class="input-group searchinput" type="text" placeholder="Search">
+                  <input class="input-group searchinput" type="text" placeholder=" Search">
                   <a href="#"><ion-icon name="search-outline"></ion-icon></a>
                 </div>
                 <div class="adv_search my-3 text-right">
@@ -73,15 +79,15 @@
                   <div class="carousel-inner py-3">
                     <div class="carousel-item active" data-interval="4000">
                       <h5 class="text-center text-light">Tam Nguyen</h5>
-                      <p class="text-center text-light w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit ae quis incidunt sunt non perspicia. </p>
+                      <p class="text-center text-light w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque veniam voluptates voluptate cumque perferendis inventore corrupti, aut eum debitis deserunt illum asperiores maxime. Illum ipsum repudiandae explicabo vitae eos. </p>
                     </div>
                     <div class="carousel-item" data-interval="4000">
                       <h5 class="text-center text-light">Anh Thu</h5>
-                      <p class="text-center text-light w-75 mx-auto">Aperiam eveniet omnis ipsum, impedit quae quis incidunt sunt non perspiciatis.</p>
+                      <p class="text-center text-light w-75 mx-auto">Exercitationem, deserunt sapiente? Nulla molestias, quibusdam pariatur iure distinctio accusamus tempora enim, eveniet omnis ea, blanditiis commodi animi. Repellendus, commodi? Mollitia, quam.</p>
                     </div>
                     <div class="carousel-item" data-interval="4000">
                       <h5 class="text-center text-light">Anh Tu</h5>
-                      <p class="text-center text-light w-75 mx-auto">Aspernatur totam ea molestias sunt quos consequatur nostrum. Autem, perspiciatis est?</p>
+                      <p class="text-center text-light w-75 mx-auto">Quasi, excepturi impedit voluptatem vitae aliquam, inventore repellat deleniti deserunt praesentium, optio quibusdam doloremque quo. Quisquam officiis dolorem esse earum tenetur amet!</p>
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#Slide" role="button" data-slide="prev">
@@ -208,7 +214,7 @@
         </div>
 
         <div class="search_sub my-5 pb-3 w-100">
-          <div class="search_title w-100 d-flex align-items-center mb-3">
+          <div class="search_title w-100 d-flex align-items-center mb-3 pt-4">
             <div class="rec_title bg-light"></div>
             <span class="title ml-1 text-light font-italic" >Search by Subject</span>
           </div>
@@ -218,7 +224,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -228,7 +234,7 @@
                 <p class="text-justify my-auto w-75" >
                   Information Systems, Search, Information Retrieval, Database Systems, Data Mining, Data Science
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -238,7 +244,7 @@
                 <p class="text-justify my-auto w-75" >
                   Web, Mobile and Multimedia Technologies
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -248,7 +254,7 @@
                 <p class="text-justify my-auto w-75" >
                   Society and the Computing Profession
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -258,7 +264,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -268,7 +274,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -278,7 +284,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -288,7 +294,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -298,7 +304,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -308,7 +314,7 @@
                 <p class="text-justify my-auto w-75" >
                   Artificial Intelligence, Machine Learning, Computer Vision, Natural language processing
                 </p>  
-                <span class="arrow_ani my-auto">
+                <span class="arrow_ani mx-auto">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </span>
               </div>
@@ -323,7 +329,7 @@
           </div>
           <div class="authors_carousel owl-carousel owl-theme">
             <div class="item">
-              <div class="card mb-3" style="max-width: 600px;">
+              <div class="card mb-3">
                 <div class="row no-gutters">
                   <div class="col-md-4 d-flex align-items-center justify-content-center">
                     <div class="avatar_author">
@@ -339,7 +345,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Physical Biology
                         </div>
                       </div>
                     </div>
@@ -364,7 +370,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Chemical Biology
                         </div>
                       </div>
                     </div>
@@ -383,7 +389,7 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Evan Kisher</h5>
-                      <p class="card-text">Microsoft Research</p>
+                      <p class="card-text">Environmental Science</p>
                       <div class="link_book d-flex rounded-pill px-2 py-2">
                         <div class="star_icon d-flex align-items-center justify-content-center ">
                           <ion-icon name="star"></ion-icon>
@@ -414,7 +420,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Public Policy
                         </div>
                       </div>
                     </div>
@@ -439,7 +445,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Social Studies
                         </div>
                       </div>
                     </div>
@@ -464,7 +470,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Special Concentrations
                         </div>
                       </div>
                     </div>
@@ -489,7 +495,7 @@
                           <ion-icon name="star"></ion-icon>
                         </div>
                         <div class="name_book ml-1">
-                          Computer Interacton
+                          Neurobiology
                         </div>
                       </div>
                     </div>
@@ -545,6 +551,68 @@
           <div class="list_book mt-5">
             <div class="row">
               <div class="left_list col-xl-8 grid_books">
+                <div class="item_book">
+                  <div class="row info_book">
+                    <div class="col-4">
+                      <div class="interface_book">
+                        <img src="https://salt.tikicdn.com/cache/200x200/ts/product/7a/b9/c4/c9433447c8c68e458c35f0abe445a100.jpg.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="title_book">
+                        <P>Elon Musk: Tesla, SpaceX Và Sứ Mệnh Tìm Kiếm Một Tương Lai Ngoài Sức Tưởng Tượng</P>
+                      </div>
+                      <hr class="w-100">
+                      <div class="author_book d-flex flex-wrap align-items-center">
+                        <div class="author_n d-flex align-items-center mr-2">
+                          <ion-icon name="person-circle-outline"></ion-icon>
+                          <p class="my-auto">Omega Plus</p>
+                        </div>
+                        <div class="author_n d-flex align-items-center">
+                          <ion-icon name="person-circle-outline"></ion-icon>
+                          <p class="my-auto" >Ashlee Vance</p>
+                        </div>
+                      </div>
+                      <div class="year_book">
+                        <p class="my-2">2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row dec_book my-3 mx-0">
+                    <p class="text-justify  w-100">Trong cuốn Elon Musk: Tesla, SpaceX và sứ mệnh tìm kiếm một tương lai ngoài sức tưởng tượng nhà báo công nghệ kỳ cựu Ashlee Vance đã mở cánh cửa đầu tiền nhìn vào cuộc sống phi thường của doanh nhân táo bạo nhất thung lũng Silicon. Được viết với độc quyền tiếp cận Musk, gia đình và bạn bè anh, cuốn sách lần theo cuộc hành trình của doanh nhân này, từ thuở nhỏ được nuôi dạy ở Nam Phi đến khi lên đến đỉnh cao của giới kinh doanh toàn cầu. Vance dành hơn 30 giờ trò chuyện với Musk và phỏng vấn gần 300 người để kể những câu chuyện đầy biến động về các công ty đang làm thay đổi thế giới mà Musk thành lập: PayPal, Tesla Motors, SpaceX và SolarCity, và để mô tả một người đàn ông đã tạo sức sống mới cho ngành công nghiệp Mỹ và thổi bùng tinh thần đổi mới ở một cấp độ khác, trong khi cũng tạo nên không ít kẻ thù trên con đường đó.</p>
+                  </div>
+                </div>
+                <div class="item_book">
+                  <div class="row info_book">
+                    <div class="col-4">
+                      <div class="interface_book">
+                        <img src="https://salt.tikicdn.com/cache/200x200/ts/product/a5/5d/e8/6153934e717e7f2c55ba0ab16abddbc5.jpg.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="title_book">
+                        <P>Cuộc đời kỳ lạ của Nikola Tesla</P>
+                      </div>
+                      <hr class="w-100">
+                      <div class="author_book d-flex flex-wrap align-items-center">
+                        <div class="author_n d-flex align-items-center mr-2">
+                          <ion-icon name="person-circle-outline"></ion-icon>
+                          <p class="my-auto">Ecoblader</p>
+                        </div>
+                        <div class="author_n d-flex align-items-center">
+                          <ion-icon name="person-circle-outline"></ion-icon>
+                          <p class="my-auto" >Anh Tú</p>
+                        </div>
+                      </div>
+                      <div class="year_book">
+                        <p class="my-2">2018</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row dec_book my-3 mx-0">
+                    <p class="text-justify  w-100">Được mệnh danh là “nhà khoa học điên” của giới vật lý, Tesla là người đi tiên phong đưa kỹ thuật điện, điện từ vào đời sống. Với cách tư duy kỳ lạ của mình, ông đã có đến khoảng 300 bằng phát minh, tiêu biểu như động cơ điện không đồng bộ hay lõi Tesla. Rất nhiều phát minh của Tesla đang được ứng dụng trong các thiết bị điện xung quanh ta ngày nay.</p>
+                  </div>
+                </div>
                 <div class="item_book">
                   <div class="row info_book">
                     <div class="col-4">
@@ -670,20 +738,247 @@
                   </div>
                 </div>
               </div>
-              <div class="right_list col-xl-4 h-100 bg-primary">
-                <div class="right_list_tiwtter my-4 bg-light">
-                  <div class="tiwtter_tilte d-flex align-items-center justify-content-between pt-3">
-                    <div class="left_title d-flex align-items-center justify-content-start">
-                      <p class="my-0 ml-3 mr-1">Tiwtter</p>
-                      <small class="mx-1">by</small>
-                      <a class="mx-1" href="#">@ACMDL</a>
+              <div class="right_list col-xl-4 h-100">
+                <div class="right_list_tiwtter my-4">
+                  <div class="tiwtter_tilte_group">
+                    <div class="tiwtter_tilte d-flex align-items-center justify-content-between pt-3">
+                      <div class="left_title d-flex align-items-center justify-content-start">
+                        <p class="my-0 ml-3 mr-1 text-light">Twitter</p>
+                        <small class="mx-1 text-light">by</small>
+                        <a class="mx-1" href="#">@ACMDL</a>
+                      </div>
+                      <div class="right_title mr-3 d-flex align-items-center text-light">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                      </div>
                     </div>
-                    <div class="right_title mr-3">
-                      <ion-icon name="information-circle-outline"></ion-icon>
+                    <hr class="w-100 my-1">
+                  </div>
+                  <div class="box_twitter_news"></div>
+                  <div class="twitter_news_scroll">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://media.istockphoto.com/photos/abstract-digital-futuristic-eye-picture-id1322220448?b=1&k=20&m=1322220448&s=170667a&w=0&h=eg3g8R3v8RMZdw8zy9ivjNSZUMvtHJoTYNIOffGrBC0=" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://media.istockphoto.com/photos/data-scientists-male-programmer-using-laptop-analyzing-and-developing-picture-id1295900106?b=1&k=20&m=1295900106&s=170667a&w=0&h=kQ2UWilU4Bild5aP03CaF65gMbSI-chG--7dd2oS8GM=" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="tiwtter_news d-flex align-content-start px-4">
+                      <div class="person_icon d-flex mr-3">
+                        <ion-icon name="logo-octocat"></ion-icon>
+                      </div>
+                      <div class="content_tiwtter d-flex">
+                        <div class="name_tag">
+                          <div class="acm_name_icon d-flex align-items-center justify-content-between">
+                            <div class="acm_name">
+                              ACE Digital Library
+                            </div>
+                            <div class="tiwtter_icon">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="acm_tag">
+                            @ACMDL
+                          </div>
+                          <div class="acm_content_news text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius vitae optio voluptates repellat. Sunt quam suscipit voluptatibus at quidem totam eius possimus, praesentium repellendus. Totam beatae natus optio porro.
+                          </div>
+                          <div class="acm_img">
+                            <img class="d-block w-100 h-auto rounded" src="https://media.istockphoto.com/photos/digital-security-concept-picture-id1289956604?b=1&k=20&m=1289956604&s=170667a&w=0&h=fpkFDlqRrw_IzsQpZkuYqfgCUw7VMemUT8IuCH4-e9w=" alt="">
+                          </div>
+                          <div class="row"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <hr>
-                  
                 </div>
               </div>
             </div>
@@ -710,8 +1005,85 @@
         <div class="rencetly">
 
         </div>
-        <div class="footer">
-
+        <div class="footer mt-3">
+          <div class="row acm_contact">
+            <div class="contact categories_acm col-xl-2 col-md-6 d-flex flex-column my-4 px-5">
+              <div class="contact_title">
+                Categories
+              </div>
+              <div class="contact_list d-flex flex-column">
+                <a href="#" >Journals</a>
+                <a href="#">Magazine</a>
+                <a href="#">Books</a>
+                <a href="#">Proceedings</a>
+                <a href="#">SIGs</a>
+                <a href="#">Conferences</a>
+                <a href="#">Collections</a>
+                <a href="#">People</a>
+              </div>
+            </div>
+            <div class="contact about_acm col-xl-5 col-md-6 d-flex flex-column my-3 px-5">
+              <div class="contact_title d-flex flex-column">
+                About
+              </div>
+              <div class="contact_list d-flex flex-column">
+                <a href="#" >About ACM Digital Library</a>
+                <a href="#">Subscription Information</a>
+                <a href="#">Author Guidelines</a>
+                <a href="#">Using ACM Digital Library</a>
+                <a href="#">All Holdings within the ACM Digital Library</a>
+                <a href="#">ACM Computing Classification System</a>
+              </div>
+            </div>
+            <div class="contact join_acm col-xl-3 col-md-6 d-flex flex-column my-3 px-5">
+              <div class="contact_title">
+                Join
+              </div>
+              <div class="contact_list d-flex flex-column">
+                <a href="#" >Join ACM</a>
+                <a href="#">Join SIGs</a>
+                <a href="#">Subscribe to Publications</a>
+                <a href="#">Institutions and Libraries</a>
+              </div>
+            </div>
+            <div class=". connect_acm col-xl-2 col-md-6 d-flex flex-column my-3 px-5">
+              <div class="contact_title">
+                Connect
+              </div>
+              <div class="contact_list d-flex flex-column">
+                <a href="#" >
+                  <ion-icon name="mail"></ion-icon>
+                  <p>Contact</p>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  <p>Facebook</p>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                <p>Twitter</p>  
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <p>Linkedin</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row acm_copyright d-flex align-items-center px-3 py-1 justify-content-between">
+            <div class="acm_policy d-flex flex-column justify-content-center">
+              <p class="py-0 my-0">The ACM Digital Library is published by the Association for Computing Machinery. Copyright © 2021 ACM, Inc.</p>
+              <div class="list_policy">
+                <a href="#">Terms of Usage</a>
+                <a href="#">|  Privacy Policy |</a>
+                <a href="#">Code of Ethics</a>
+              </div>
+            </div>
+            <div class="acm_certification">
+              <img src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-logo-dl.png" alt="">
+              <img src="https://dl.acm.org/specs/products/acm/releasedAssets/images/acm-logo-3.png" alt="">
+            </div>
+          </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
