@@ -208,6 +208,16 @@ textarea {
 .owl-stage {
       padding: 1rem 0;
 }
+.owl-item {
+      transition: 0.5s ease;
+}
+.owl-item.active.center{
+      transform: scale(1.25);
+      z-index: 99999;
+}
+.owl-item.active.center .overlay_avatar{
+      opacity: 0;
+}
 .search_sub {
       background-color: black;
       background-image: url(https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-decoration1.png),
