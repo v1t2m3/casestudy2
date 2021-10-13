@@ -14,6 +14,11 @@ owl.owlCarousel({
             items:1,
             nav:false,
         },
+        576:{
+            items:2,
+            nav:false,
+            margin: 20,
+        },
         780:{
             items:2,
             nav:false,
