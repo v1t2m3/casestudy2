@@ -42,15 +42,18 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 /////////////////////////////////////////////////////
-var owl2 = $('.acmbooks_carousel');
+var owl2 = $('.winers_carousel');
 owl2.owlCarousel({
     items:1,
     loop:true,
-    margin:0,
     smartSpeed: 2000,
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
+    center: true,
+    autoWidth:true,
+    nav: false,
+    dots:false,
     
 });
 $('.play').on('click',function(){

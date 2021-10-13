@@ -172,13 +172,14 @@ textarea {
 }
 .avatar {
       position: relative;
-      margin: 0px -20px;
+      margin: 0px -5px;
+      transition: 0.5s ease;
 }
 
 .avatar img {
       position: relative;
-      height: 130px;
-      width: 130px;
+      height: 130px!important;
+      width: 130px!important;
       object-fit: cover;
       object-position: center center;
       border-radius: 50%;
@@ -201,7 +202,11 @@ textarea {
       opacity: 0;
 }
 .avatar:hover {
-      z-index: 99;
+      z-index: 9999;
+      transform: scale(1.15);
+}
+.owl-stage {
+      padding: 1rem 0;
 }
 .search_sub {
       background-color: black;
