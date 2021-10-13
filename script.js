@@ -3,6 +3,7 @@ owl.owlCarousel({
     items:3,
     loop:true,
     margin:20,
+    autoWidth:true,
     smartSpeed: 2000,
     autoplay:true,
     autoplayTimeout:3000,
