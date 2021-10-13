@@ -205,17 +205,17 @@ textarea {
       z-index: 9999;
       transform: scale(1.15);
 }
-.owl-stage {
+.winers .owl-stage {
       padding: 1rem 0;
 }
-.owl-item {
+.winers .owl-item {
       transition: 0.5s ease;
 }
-.owl-item.active.center{
+.winers .owl-item.active.center{
       transform: scale(1.25);
       z-index: 99999;
 }
-.owl-item.active.center .overlay_avatar{
+.winers .owl-item.active.center .overlay_avatar{
       opacity: 0;
 }
 .search_sub {
